@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  min-height: 40px;
+  background-color: rgba(0, 0, 0, 0.802);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 8px 15px;
+}
+.logo-onebitcode {
+  /* logoNavBar */
+  width: 180px;
+}
+.buttons {
+  /* headerBtnGroup */
+  display: flex;
+  gap: 15px;
+}
+.buttonHeader {
+  /* navBtn */
+  display: flex;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 6px;
+  border: 2px solid transparent;
+}
+.buttonHeader:hover {
+  border-bottom: 2px solid red;
+}
+.title {
+  /* sectionTitle */
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+.sub-title {
+  /* sectionDescription */
+  text-align: center;
+  color: #383838;
+  font-size: 20px;
+}
+.main-cards {
+  /* gridContainer */
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 3fr 1fr; /* defino o tamanho na tela (em % fica ativando scroll bar)  */
+  grid-template-areas: "cards CategoryExtra"; /* defino os conteudos pra ocupar o tamanho da tela */
+  padding: 20px;
+
+  flex: 1 0 auto; /* (1) vai ocupar o espaço disponivel na tela, (0) não vai diminuir e (auto) tamanho basico do item na tela sempre em automatico */
+}
+.cards {
+  /* mainContent */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  grid-area: cards;
+}
+.category-cards {
+  /* categoryCard */
+  width: 280px;
+  height: 380px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.picture {
+  /* mainCardImg */
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+}
+.category-cards:hover {
+  border: 2px solid black;
+}
+.card-title {
+  /* mainCategoryCardTitle */
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6px;
+}
+.description-category {
+  /* mainCategoryCardDescription */
+  padding: 6px;
+}
+.CategoryExtra {
+  /* sidebarContent */
+  background-color: rgba(0, 0, 0, 0.802);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  grid-area: CategoryExtra;
+  gap: 20px;
+}
+.CategoryExtraCard {
+  /* sidebarCard */
+  width: 75%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  color: white;
+}
+.PicturesCategoryExtra {
+  /* sidebarCardImg */
+  width: 100%;
+  border-radius: 10px;
+}
+.CategoryExtraCard:hover {
+  border: 2px solid gainsboro;
+}
+.ParagraphCategoryExtraCard {
+  /* sidebarCardTitle */
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.footer {
+  width: 100%;
+  min-height: 40px;
+  background-color: rgba(0, 0, 0, 0.802);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 15px;
+}
+.footerAnchor {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.footerAnchor:hover {
+  border-bottom: 2px solid red;
+}
+.TitleCategoryExtra {
+  justify-content: center;
+  font-size: 25px;
+  color: white;
+}
+@media (max-width: 910px) {
+  .card-title {
+    text-align: center;
+  }
+}
+@media (max-width: 630px) {
+  .main-cards {
+    grid-template-areas:
+      "cards"
+      "CategoryExtra";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .CategoryExtra {
+    min-width: auto;
+  }
+  .footerAnchor {
+    font-size: 19px;
+  }
+}
+@media (max-width: 463px) {
+  .header {
+    justify-content: center;
+  }
+  .footer {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,29 @@
+#primeiroparagrafo{
+    font-family:'Ruboto';
+    font-size: 20px;
+    font-weight:600;
+    color: rgb(255, 251, 0);
+    
+}
+#segundoparagrafo{
+    font-family:'Montserrat', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 255, 0);
+}
+h1{
+    font-family:'Geostar';
+    text-align:center;
+    font-size: 50px;
+    color: rgb(180, 0, 0);
+    background-color: rgb(165, 147, 70);
+    border-style: solid;
+    border-width: 1.5px;
+    border-color:rgb(255, 255, 255);
+    text-decoration: underline;
+    margin: 50px auto 50px auto;
+    width: 45%;
+}
+body{
+    background-color:rgb(105, 105, 105);
+}

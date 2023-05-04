@@ -1,0 +1,29 @@
+h1{
+    color:blue; font-size:70px; /*Cor da fonte do elemento e o font-size defini o tamanho do elemebnto, no caso a fonte */
+    
+    /* background-color:rgb(14, 10, 10);Cor do fundo do elemento*/
+    
+    /* border: 2px dotted yellow  posso declarar tudo em um só elemento, respeitando a ordem*/
+
+    /* border-color:yellow;  Para definir a cor da borda */
+    /*border-width:2px; para definir o tamanho da borda */
+    /* border-style:dasehd; para definir o estilo da borda */
+}
+.moon{
+    color: blue;
+}
+body{
+    
+    background-image: url('https://img.vixdata.io/pd/jpg-large/pt/sites/default/files/s/spacex-1400x800-0218-1.jpg');
+    /* para definir uma imagem dentro do elemento body, que é o corpo da página */
+    background-repeat:no-repeat;
+    /* definir a não repetição da imagem no site */
+    background-size:cover;
+    /* definir o tamanho da imagem, automatico, cover... */
+    background-position:right top;
+    /* Defini a posição da imagem na pagina */
+}
+#europa-text{
+    color:red;
+    font-size: 15px;
+}
